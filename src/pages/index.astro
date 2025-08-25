@@ -1,0 +1,134 @@
+---
+// Import the necessary components
+import MainLayout from "@/layouts/MainLayout.astro";
+import HeroSection from "@components/sections/landing/HeroSection.astro";
+import HeroSectionAlt from "@components/sections/landing/HeroSectionAlt.astro";
+import ClientsSection from "@components/sections/landing/ClientsSection.astro";
+import FeaturesGeneral from "@components/sections/features/FeaturesGeneral.astro";
+import FeaturesNavs from "@components/sections/features/FeaturesNavs.astro";
+import TestimonialsSection from "@components/sections/testimonials/TestimonialsSection.astro";
+import FAQ from "@components/sections/misc/FAQ.astro";
+import AnnouncementBanner from "@components/ui/banners/AnnouncementBanner.astro";
+import heroImage from "@images/hero-image.jpg";
+import faqs from "@data/faqs.json";
+import features from "@data/features.json";
+import construction from "@images/construction-image.avif";
+import tools from "@images/automated-tools.jpg";
+import dashboard from "@images/dashboard-image.avif";
+import profilePic1 from "@images/profile_pic1.png";
+import { partnersData } from "@/data_files/constants";
+
+---
+
+<MainLayout>
+
+  <HeroSection
+    title=`Transform Your Business with <span
+        class="text-yellow-500 dark:text-yellow-400">TechNity Solutions</span>`
+    subTitle="Expert software consultancy specializing in full-stack development, microservices architecture, and DevOps practices for modern businesses."
+    primaryBtn="Explore Services"
+    primaryBtnURL="/services"
+    secondaryBtn="Contact Our Team"
+    secondaryBtnURL="/contact"
+    starCount={5}
+    reviews=`From Over <span class="font-bold">150+</span> Clients`
+    src={heroImage}
+    alt="Modern software development workspace with cutting-edge technology stack"
+  />
+
+  <section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+    <div class="mx-auto max-w-4xl text-center">
+      <p class="text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed">
+        The name <span class="font-semibold text-orange-500">TechNity</span> comes from a mix of <span class="font-medium text-orange-500">"Technology"</span> and <span class="font-medium text-orange-500">"Nitya"</span>, a Sanskrit word that means endless or eternal. For us, it's more than just a name. It's about the belief that technology never stops evolving, and neither do we. We want to build solutions that last, grow, and adapt with time, just like the endless flow of ideas and possibilities that inspire us every day.
+      </p>
+    </div>
+  </section>
+
+  <!---<ClientsSection
+    title="Trusted by Forward-Thinking Companies"
+    subTitle="Join innovative businesses that choose TechNity Solutions for their software development needs."
+    partners={partnersData}
+  />-->
+
+  <FeaturesGeneral
+    title="Meeting Modern Development Challenges"
+    subTitle="At TechNity Solutions, we tackle complex software challenges with modern approaches. From full-stack development to microservices architecture, we're dedicated to delivering scalable solutions that drive your business forward."
+    features={features}
+  />
+
+  <FeaturesNavs
+    title=`Customize <span class="text-yellow-500 dark:text-yellow-400">TechNity Solutions</span>' approach to perfectly suit your software development needs.`
+    tabs={[
+      {
+        heading: "Modern Tech Stack",
+        content:
+          "Leverage cutting-edge technologies with TechNity Solutions' expertise. From React to Node.js, we use the latest tools and frameworks to build scalable, maintainable applications.",
+        svg: "tools",
+        src: tools,
+        alt: "Modern development tools and technology stack interface",
+        first: true,
+      },
+      {
+        heading: "DevOps & CI/CD",
+        content:
+          "Streamline your development process with our comprehensive DevOps solutions. Automated testing, continuous integration, and deployment pipelines ensure reliable, fast delivery.",
+        svg: "dashboard",
+        src: dashboard,
+        alt: "DevOps dashboard showing CI/CD pipeline and deployment metrics",
+        second: true,
+      },
+      {
+        heading: "Microservices Architecture",
+        content:
+          "Build scalable, resilient systems with microservices architecture. Our approach enables independent deployment, better fault isolation, and easier maintenance for growing applications.",
+        svg: "house",
+        src: construction,
+        alt: "Microservices architecture diagram showing interconnected services",
+      },
+    ]}
+  />
+
+  <TestimonialsSection
+    title="Accelerate Your Development"
+    subTitle="At TechNity Solutions, we deliver rapid development cycles with modern practices. Experience software development at its finest."
+    testimonials={[
+      {
+        content:
+          "TechNity Solutions transformed our development process completely. Their expertise in microservices and DevOps practices helped us scale efficiently. Truly exceptional software consultancy!",
+        author: "Nitya G",
+        role: "VP of Engineering | PBXly",
+        avatarSrc: profilePic1,
+      },
+    ]}
+    statistics={[
+      {
+        count: "150+",
+        description:
+          "successful projects delivered — from startups to enterprise clients",
+      },
+      {
+        count: "60%",
+        description:
+          "faster time-to-market with modern development practices",
+      },
+      {
+        count: "40%",
+        description:
+          "reduction in infrastructure costs through optimized architecture",
+      },
+      {
+        count: "3x",
+        description: "improved deployment frequency with CI/CD pipelines",
+      },
+    ]}
+  />
+
+
+  <FAQ title="Frequently<br />asked questions" faqs={faqs} />
+
+  <HeroSectionAlt
+    title="Let's Build Your Future"
+    subTitle="Ready to transform your business with cutting-edge software solutions? Partner with TechNity Solutions for your next project."
+    url="/contact"
+  />
+</MainLayout>

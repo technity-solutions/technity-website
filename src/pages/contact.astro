@@ -1,0 +1,36 @@
+---
+// Import the necessary components
+import MainLayout from "@/layouts/MainLayout.astro";
+import ContactSection from "@components/sections/misc/ContactSection.astro";
+import { SITE } from "@data/constants";
+
+const pageTitle: string = `Contact | ${SITE.title}`;
+const metaDescription =
+  "Have questions or want to discuss a software project? Reach out to TechNity Solutions, and let's craft the perfect development solution for your business needs.";
+const ogTitle = "Contact Us | TechNity Solutions";
+---
+
+<MainLayout
+  title={pageTitle}
+  customDescription={metaDescription}
+  customOgTitle={ogTitle}
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://technity-solutions.com/contact",
+    url: "https://technity-solutions.com/contact",
+    name: "Contact Us | TechNity Solutions",
+    description:
+      "Have questions or want to discuss a software project? Reach out to TechNity Solutions, and let's craft the perfect development solution for your business needs.",
+    isPartOf: {
+      "@type": "WebSite",
+      url: "https://technity-solutions.com",
+      name: "TechNity Solutions",
+      description:
+        "Expert software consultancy specializing in full-stack development, microservices, and DevOps practices.",
+    },
+    inLanguage: "en-US",
+  }}
+>
+  <ContactSection />
+</MainLayout>

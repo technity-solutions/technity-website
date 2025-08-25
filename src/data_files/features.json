@@ -1,0 +1,22 @@
+[
+  {
+    "heading": "Expert Development Teams",
+    "content": "Work with our dedicated full-stack development teams who bring deep expertise in modern technologies. Count on professional guidance and exceptional results throughout your project lifecycle.",
+    "svg": "groups"
+  },
+  {
+    "heading": "Scalable & Cost-Effective",
+    "content": "Build robust, scalable solutions with TechNity Solutions' proven methodologies. Our microservices approach and DevOps practices optimize both performance and development costs.",
+    "svg": "verified"
+  },
+  {
+    "heading": "End-to-End Project Management",
+    "content": "From requirements gathering to deployment and maintenance, we handle every aspect of your software project. Our comprehensive approach ensures seamless integration and successful delivery.",
+    "svg": "books"
+  },
+  {
+    "heading": "Modern Architecture Design",
+    "content": "Experience the power of well-architected systems with TechNity Solutions' focus on microservices, cloud-native solutions, and best practices for maintainable, resilient applications.",
+    "svg": "frame"
+  }
+]

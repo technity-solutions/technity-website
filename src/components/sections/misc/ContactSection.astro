@@ -1,0 +1,57 @@
+---
+// Import the necessary dependencies.
+import ContactIconBlock from "@components/ui/blocks/ContactIconBlock.astro";
+import Icon from "@components/ui/icons/Icon.astro";
+
+// Define the variables that will be used in this component
+const title: string = "Contact us";
+const subTitle: string =
+  "Have questions or want to discuss a software project? Reach out to TechNity Solutions, and let's craft the perfect development solution for your business needs.";
+---
+
+<!-- Contact Us -->
+<section class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
+  <div class="mx-auto max-w-2xl lg:max-w-5xl">
+    <div class="text-center">
+      <h1
+        class="text-balance text-2xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 md:text-4xl md:leading-tight"
+      >
+        {title}
+      </h1>
+      <p class="mt-1 text-pretty text-neutral-600 dark:text-neutral-400">
+        {subTitle}
+      </p>
+    </div>
+
+    <div class="mt-12 max-w-2xl mx-auto">
+      <!-- Contact Information -->
+      <div class="divide-y divide-neutral-300 dark:divide-neutral-700">
+        <ContactIconBlock
+          heading="Our Address"
+          content="Visit us at our office location"
+          isAddressVisible={true}
+          addressContent="Plot Not 46, Hitech City Road, Brindavan Colony, Madhapur, Hyderabad - 500081"
+          ><Icon name="mapPin" />
+        </ContactIconBlock>
+
+        <ContactIconBlock
+          heading="Phone Number"
+          content="Call us directly for immediate assistance"
+          isLinkVisible={true}
+          linkTitle="+91 9849627723"
+          linkURL="tel:+919849627723"
+          ><Icon name="chatBubble" />
+        </ContactIconBlock>
+
+        <ContactIconBlock
+          heading="Email Address"
+          content="Send us an email and we'll get back to you"
+          isLinkVisible={true}
+          linkTitle="contact.technity.solutions@gmail.com"
+          linkURL="mailto:contact.technity.solutions@gmail.com"
+          ><Icon name="envelopeOpen" />
+        </ContactIconBlock>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+{
+  "subTitle": "Ask us anything about our software consultancy services and expertise, and get detailed answers.",
+  "faqs": [
+    {
+      "question": "What technologies does TechNity Solutions specialize in?",
+      "answer": "We specialize in modern full-stack development using React, Node.js, Python, and cloud technologies. Our expertise includes microservices architecture, DevOps practices, CI/CD pipelines, and comprehensive testing frameworks for scalable applications."
+    },
+    {
+      "question": "How do you approach software project development?",
+      "answer": "We follow an incremental development approach with microservices architecture. Our process includes requirements gathering, design, development, testing, and deployment phases, all supported by robust DevOps practices and continuous integration pipelines."
+    },
+    {
+      "question": "What kind of support do you provide after project delivery?",
+      "answer": "We offer comprehensive post-deployment support including maintenance, monitoring, performance optimization, and feature enhancements. Our team ensures your applications remain secure, scalable, and up-to-date with the latest technologies."
+    },
+    {
+      "question": "How do you ensure code quality and testing?",
+      "answer": "We implement modern testing frameworks including unit testing, integration testing, and end-to-end testing. Our CI/CD pipelines automatically run comprehensive test suites, ensuring high code quality and reliable deployments."
+    },
+    {
+      "question": "Can you help with legacy system modernization?",
+      "answer": "Absolutely! We specialize in modernizing legacy systems by migrating them to modern architectures, implementing microservices patterns, and establishing DevOps practices. We ensure minimal disruption while maximizing performance and maintainability."
+    },
+    {
+      "question": "What makes TechNity Solutions different from other consultancies?",
+      "answer": "Our focus on incremental development, microservices architecture, and cutting-edge DevOps practices sets us apart. We combine technical expertise with business understanding to deliver solutions that are not just functional, but scalable and future-ready."
+    }
+  ]
+}
