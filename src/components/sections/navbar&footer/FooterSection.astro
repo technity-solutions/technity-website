@@ -5,6 +5,8 @@ import EmailFooterInput from "@components/ui/forms/input/EmailFooterInput.astro"
 import enStrings from "@utils/navigation.ts";
 import Icon from "@components/ui/icons/Icon.astro";
 import { SITE } from "@data/constants";
+import { Image } from "astro:assets";
+import techNityLogo from "@images/starlight/technity-logo-horizontal.png";
 
 // Use English strings only
 const strings = enStrings;
@@ -21,7 +23,7 @@ const crafted: string = "Crafted by";
     <div class="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
       <div class="col-span-full lg:col-span-1">
         <!-- Brand Logo -->
-        <img src="/src/images/starlight/technity-logo-horizontal.png" alt="TechNity Solutions" class="h-auto w-48" />
+        <Image src={techNityLogo} alt="TechNity Solutions" class="h-auto w-48" />
       </div>
       <!-- An array of links for Product and Company sections -->
       {

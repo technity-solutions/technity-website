@@ -3,6 +3,8 @@
 import ThemeIcon from "@components/ThemeIcon.astro";
 import NavLink from "@components/ui/links/NavLink.astro";
 import enStrings from "@utils/navigation.ts";
+import { Image } from "astro:assets";
+import techNityLogo from "@images/starlight/technity-logo-horizontal.png";
 
 // Use English strings only
 const strings = enStrings;
@@ -25,7 +27,7 @@ const homeUrl = "/";
         href={homeUrl}
         aria-label="Brand"
       >
-        <img src="/src/images/starlight/technity-logo-horizontal.png" alt="TechNity Solutions" class="h-auto w-48" />
+        <Image src={techNityLogo} alt="TechNity Solutions" class="h-auto w-48" />
       </a>
       <!-- Collapse toggle for smaller screens -->
       <div class="ml-auto mr-5 md:hidden">
